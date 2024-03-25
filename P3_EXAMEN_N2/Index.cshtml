@@ -1,0 +1,106 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @model List<P3_EXAMEN_N2.Models.Profesor>
+
+    <h1>Lista de Profesores</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Área de Conocimiento</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var profesor in Model)
+            {
+                <tr>
+                    <td>@profesor.Cedula</td>
+                    <td>@profesor.Nombre</td>
+                    <td>@profesor.Apellido</td>
+                    <td>@profesor.AreaConocimiento</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @model List<P3_EXAMEN_N2.Models.Estudiante>
+
+<h1>Lista de Estudiantes</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Carrera</th>
+            <th>Cantidad de Cursos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var estudiante in Model)
+        {
+            <tr>
+                <td>@estudiante.Cedula</td>
+                <td>@estudiante.Nombre</td>
+                <td>@estudiante.Edad</td>
+                <td>@estudiante.Carrera</td>
+                <td>@estudiante.CantidadCursos</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@model List<P3_EXAMEN_N2.Models.Profesor>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Área de Conocimiento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var profesor in Model)
+        {
+            <tr>
+                <td>@profesor.Cedula</td>
+                <td>@profesor.Nombre</td>
+                <td>@profesor.Apellido</td>
+                <td>@profesor.AreaConocimiento</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@model List<P3_EXAMEN_N2.Models.Estudiante>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Carrera</th>
+            <th>Cantidad de Cursos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var estudiante in Model)
+        {
+            <tr>
+                <td>@estudiante.Cedula</td>
+                <td>@estudiante.Nombre</td>
+                <td>@estudiante.Edad</td>
+                <td>@estudiante.Carrera</td>
+                <td>@estudiante.CantidadCursos</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+}
